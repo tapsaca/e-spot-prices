@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import Chart from '../components/Chart'
 
 const CurrentPrice = () => {
   const [date, setDate] = useState(new Date())
@@ -18,6 +19,7 @@ const CurrentPrice = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.priceText}>{price} c / kWh</Text>
+      <Chart />
     </View>
   )
 }
